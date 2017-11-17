@@ -1,0 +1,30 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../shared-styles.html">
+
+<dom-module id="my-carousel">
+    <template>
+        <style include="shared-styles">
+        :host {
+            display: block;
+        }
+        </style>
+    
+        <div>
+            <ul>
+                <li>aaaaa</li>
+                <li>bbbbb</li>
+                <li>ccccc</li>
+                <li>ddddd</li>
+            </ul>
+        </div>
+    </template>
+    
+    <script>
+        class MyCarousel extends Polymer.Element {
+        static get is() { return 'my-carousel'; }
+        }
+    
+        window.customElements.define(MyCarousel.is, MyCarousel);
+    </script>
+</dom-module>
+    
